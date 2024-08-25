@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    background-color: rgb(239, 250, 250);
+
+}
+
+header{
+    background-color: blanchedalmond;
+}
+
+footer{
+    background-color: blanchedalmond;
+}
+
+@media (min-width: 600px){
+
+    .pagewrap{
+        border: solid 1px;
+
+        display: flex;
+    
+        /*vertically stack children*/
+        flex-direction: column;
+    
+        /* expand to take full height of page */
+        /* min-height overrides both height & max-height */
+        min-height: 100vh; 
+    
+        
+      } 
+    
+    header{
+        border: solid 1px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+
+        position: relative;
+        height: 8dvh;
+        padding: 10px 0;
+    }
+
+    /* .contenedor a{
+        color: black;
+        text-decoration: none;
+    } */
+    .contenedor a:hover{
+        text-decoration: underline;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    #logo {
+        display: flex;
+        padding-left: 20%;
+
+    }
+
+    #menu img {
+
+        width: 26px;
+    }
+
+    #menu {
+        width: 30px;
+        height: 30px;
+        justify-content: left;
+        padding-left: 10px;
+    }
+
+
+    #utilities {
+        display: flex;
+        text-align: right;
+        padding: 5px;
+    }
+
+    #utilities input {
+        margin-right: 20px;
+        border: none;
+        background-color: transparent;
+        height: 30px;
+        padding-left: 2px;
+    }
+
+    #utilities img {
+        margin: 0px 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    nav{
+        border: solid 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .product-padre{
+        border: solid 1px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        
+        position: relative;
+        width: 80%;
+
+        --top: 10vh;
+
+        top: var(--top);
+        left: 10%;
+        right: 10%;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 5%;
+        grid-row-gap: 10px;
+
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .contenedor{
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+        background-color: white;
+        /* padding: 10px 10px; */
+        
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .product-img{
+        justify-content: center;
+        width: 80%;
+        padding: 10% 10%;
+        height: 20vh;
+        border: solid 1px;
+        
+        /* background-image: url('/img/camisa.avif');
+        background-size: 100%; */
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .product-detail{
+        padding: 0% 8% 5%;
+    }
+
+    footer{
+        border: solid 1px;
+        position: relative;
+        display: flex;
+        height: 10vh;
+        padding: 10px 10px;
+        font-size: 80%;
+
+        /* --ftop: calc(var(--top) + var(--top));
+        top: var(--ftop); */
+        top: 20vh;
+
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer ul{
+        list-style: none;
+    }
+    
+    footer li{
+        display: inline-flex;
+        padding: 0px 10px;
+    }
+}
