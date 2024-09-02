@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="shopping-cart.css">
+</head>
+<body>
+    <header class="cart__header">
+        <div class="cart__header-wrap">
+            <div class="cart__header-logo-wrap"><div><img src="resources/logo-hw-black-200x77.png" class="cart__header-logo"></div></div>
+            <div class="cart__progression-line">
+                <div class="cart__progression-line-instance">Carrito</div>
+                <div class="cart_progression-line-arrow"><img src="resources/chevrons-right-regular-24.png" alt="progression-line-arrow"></div>
+                <div class="cart__progression-line-instance">Identificacion</div>
+                <div class="cart_progression-line-arrow"><img src="resources/chevrons-right-regular-24.png" alt="progression-line-arrow"></div>
+                <div class="cart__progression-line-instance">Entrega</div>
+                <div class="cart_progression-line-arrow"><img src="resources/chevrons-right-regular-24.png" alt="progression-line-arrow"></div>
+                <div class="cart__progression-line-instance">Pago</div>
+                <div class="cart_progression-line-arrow"><img src="resources/chevrons-right-regular-24.png" alt="progression-line-arrow"></div>
+                <div class="cart_progression-line-arrow"></div>
+                <div class="cart__progression-line-instance">Confirmacion</div>
+            </div>
+        </div>
+    </header>
+    <div class="cart__wrap">
+        <div class="cart__items-table-wrap">
+            <table class="cart__items-table" border="1">
+            <tr class="cart__items-table-header">
+                <th id="cart__items-table-header-product">Producto</th>
+                <th></th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th></th>
+                </tr>
+                <tr class="cart__table-product">
+                <td class="cart__items-table-product-image"><img src="resources/DSC03145-1.jpg" class="product-image"></td>
+                <td class="cart__items-table-product-name">MUSCULOSA ALBARN LOST M</td>
+                <td class="cart__items-table-product-quantity"><input type="number" class="cart__items-table-quantity-input" value="1"></td>
+                <td class="cart__items-table-product-price">$10.000</td>
+                <td class="cart__items-table-product-delete"><button class="delete-button">X</button></td>
+                </tr>
+                <tr class="cart__table-product">
+                <td class="cart__items-table-product-image"><img src="resources/DSC03145-1.jpg" class="product-image"></td>
+                <td class="cart__items-table-product-name">MUSCULOSA ALBARN LOST M</td>
+                <td class="cart__items-table-product-quantity"><input type="number" class="cart__items-table-quantity-input" value="1"></td>
+                <td class="cart__items-table-product-price">$10.000</td>
+                <td class="cart__items-table-product-delete"><button class="delete-button">X</button></td>
+                </tr>
+                <tr class="cart__table-product">
+                    <td class="cart__items-table-product-image"><img src="resources/DSC03145-1.jpg" class="product-image"></td>
+                    <td class="cart__items-table-product-name">MUSCULOSA ALBARN LOST M</td>
+                    <td class="cart__items-table-product-quantity"><input type="number" class="cart__items-table-quantity-input" value="1"></td>
+                    <td class="cart__items-table-product-price">$10.000</td>
+                    <td class="cart__items-table-product-delete"><button class="delete-button">X</button></td>
+                </tr>
+                <tr class="cart__table-product">
+                    <td class="cart__items-table-product-image"><img src="resources/DSC03145-1.jpg" class="product-image"></td>
+                    <td class="cart__items-table-product-name">MUSCULOSA ALBARN LOST M</td>
+                    <td class="cart__items-table-product-quantity"><input type="number" class="cart__items-table-quantity-input" value="1"></td>
+                    <td class="cart__items-table-product-price">$10.000</td>
+                    <td class="cart__items-table-product-delete"><button class="delete-button">X</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="cart__summary-table-wrap">
+            <table class="cart__summary-table" border="1">
+                <tr>
+                    <th id="use-cupon-text" colspan="2">USAR CUPON DE DESCUENTO</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="cart__summary-table-discount-input" placeholder="Ingrese su cupon"></td>
+                    <td id="#cart__summary-table-cell-discount-submit"><button class="cart__summary-table-button-discount-submit">Añadir</button></td>
+                </tr>
+                <div class="cart__summary-table-details">
+                <tr>
+                    <td class="cart__summary-table-separating-row">Subtotal</td>
+                    <td class="cart__summary-table-separating-row">123</td>
+                </tr>
+                <tr>
+                    <td>Descuentos</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>Envios</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td class="cart__summary-table-separating-row" id="total-text">Total</td>
+                    <td class="cart__summary-table-separating-row" id="total-amount">123</td>
+                </tr>
+                </div>
+                <tr>
+                    <td colspan="2" id="cart__summary-table-purchase-button-wrap"><button id="cart__summary-table-purchase-button">FINALIZAR COMPRA</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="cart__summary-table-continue-buying"><a href="#">O continua comprando</a>
+                </tr>
+            </table>
+        </div>
+        <div class="cart__summary-table-shipping">
+            <h3>ENTREGA</h3>
+            <form>
+                <label name="codigo_postal" id="codigo_postal"  ></label>
+                <input class="shipping__input-cp" name="codigo_postal" id="codigo_postal" placeholder="Ingrese su codigo postal">
+                <input class="shipping__submit-cp" type="submit" value="CALCULAR">
+            </form>
+        </div>
+    </div>
+    <footer>
+        ©2024 Grupo 7.
+        <ul>
+          <li>1123123121</li>
+          <li>asdasdasd</li>
+        </ul>
+        
+    </footer>
+</body>
+</html>
