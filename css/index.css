@@ -36,7 +36,6 @@ body{
 .card{
     border: none;
     overflow: hidden;
-    border: solid;
     background-position: center;
     background-repeat: no-repeat;
 }
