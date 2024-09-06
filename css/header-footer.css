@@ -1,4 +1,4 @@
-.header, .footer{
+.header{
     background-color: #ffffff;
 }
 
@@ -65,8 +65,14 @@ a{
 
 }
 
-/* COMPUTER */
-@media (min-width: 760px){
+@media (min-width: 1600px){
+    #logo{
+        max-height: 5vh;
+    }
+}
+
+/* Notebook */
+@media (min-width: 1024px){
 
     
     #menu {
@@ -82,7 +88,8 @@ a{
         display: flex;
         position: absolute;
         justify-content: center;
-        height: 8vh;
+        max-height: 7vh;
+        height: 100%;
         width: auto;
         left: 45vw;
         right: 45vw;
@@ -109,13 +116,13 @@ a{
     .footer{
         top: 10vh;
         height: 8vh;
-        padding: 10px 10px;
+        padding: 10px;
     }
 
 }
 
 /* TABLET? */
-@media (min-width: 430px) and (max-width: 759px){
+@media (min-width: 430.1px) and (max-width: 759px){
 }
 
 /* MOBILE */
@@ -138,7 +145,8 @@ a{
         display: flex;
         position: relative;
         justify-content: center;
-        height: 8vh;
+        max-height: 6vh;
+        height: 100%;
         width: auto;
     }
         
