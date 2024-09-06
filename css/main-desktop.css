@@ -33,14 +33,22 @@ body{
     font-weight: 600;
 }
 
-.card:hover{
-    background-size: cover;
+.card{
     border: none;
+    overflow: hidden;
+    border: solid;
+    background-image: url(../img/ropa/buzo2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card img{
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .card-img-top:hover{
-    background-color: #777;
-    opacity: 0.75;
+    opacity: 0.7;
 }
 
 .extra-info{
@@ -56,6 +64,15 @@ body{
     justify-items: center;
 }
 
+.owl-prev{
+    left: 0;
+    height: 40px;
+}
+
+.owl-next{
+    right: 0;
+}
+
 .owl-dots{
     display: none;
 }
@@ -66,59 +83,31 @@ body{
     opacity: 1;
 }
 
-.owl-carousel .nav-btn{
-    position: absolute;
-    cursor: pointer;
-}
-      
-.owl-carousel .owl-prev.disabled,
-.owl-carousel .owl-next.disabled{
-pointer-events: none;
-opacity: 0.2;
-}
-
-.owl-carousel .prev-slide{
-    background: url(../img/prev-arrow.png) no-repeat scroll 0 0;
-}
-
-.owl-carousel .next-slide{
-background: url(../img/next-arrow.png) no-repeat scroll -24px 0px;
-}
+    
 
 
 
-@media (min-width: 820px){
+@media (min-width: 720px){
 
     .cont-carousel{
-        padding: 2% 2%;
+        padding: 5% 5%;
     }
 
     .card{
-        width: 77%;
-        transform: translateX(17%);
+        height: 300px;
+        width: auto;
+        margin: 0;
+        justify-content: center;
+        background-size: auto 300px;
     }
-
-
-    /* .card:hover{
-        background-image: url(../img/ropa/alt/remera2.webp);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-x: 2vw;
-
-        max-width: 250px;
-        width: 70%;
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5); you can change the value also 
-        -webkit-transform-origin: center;
-        transform-origin: center;
-    } */
 
     .card-img-top{
         width: 100%;
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5); /* you can change the value also */
-        -webkit-transform-origin: center;
-        transform-origin: center;
+        height: auto;
+    }
+
+    .card-img-top:hover{
+        opacity: 0;
     }
 
     .owl-nav .owl-prev, .owl-nav .owl-next{
@@ -129,22 +118,20 @@ background: url(../img/next-arrow.png) no-repeat scroll -24px 0px;
 
     .owl-nav{
         position: relative;
-        top: -32.5vh;
+        top: -32vh;
         justify-content: center;
     }
 
     .owl-prev{
         position: absolute;
-        left: 0.5vw;
     }
 
     .owl-next{
         position: absolute;
-        right: 0;
     }
 
     button img {
-        height: 10vh;
+        height: 35px;
     }    
 
     .extra-info{
@@ -154,7 +141,9 @@ background: url(../img/next-arrow.png) no-repeat scroll -24px 0px;
 
         grid-column-gap: 5%;
         grid-row-gap: 10px;
-        }
+        
+    
+    }
 
     .extra-info-item{
         position: relative;
@@ -162,11 +151,4 @@ background: url(../img/next-arrow.png) no-repeat scroll -24px 0px;
         width: fit-content;
 
     }
-
-    .owl-carousel .nav-btn{
-        height: 47px;
-        width: 26px;
-        top: 100px !important;
-      }
-
 }
