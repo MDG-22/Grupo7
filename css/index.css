@@ -39,7 +39,6 @@ body{
     border: solid;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/ropa/buzo2.webp);
 }
 
 .card img{
@@ -48,7 +47,37 @@ body{
 }
 
 .card-img-top:hover{
-    opacity: 0.7;
+    opacity: 0;
+}
+
+.card#buzo1:hover{
+    background-image: url(../img/ropa/buzo2.webp);
+
+}
+
+.card#buzo2:hover{
+    background-image: url(../img/ropa/buzo1.webp);
+
+}
+
+.card#remera1:hover{
+    background-image: url(../img/ropa/remera2.webp);
+
+}
+
+.card#remera2:hover{
+    background-image: url(../img/ropa/remera1.webp);
+
+}
+
+.card#pantalon1:hover{
+    background-image: url(../img/ropa/pantalon2.webp);
+
+}
+
+.card#pantalon2:hover{
+    background-image: url(../img/ropa/pantalon1.webp);
+
 }
 
 .extra-info{
@@ -104,10 +133,6 @@ body{
     .card-img-top{
         width: 100%;
         height: auto;
-    }
-
-    .card-img-top:hover{
-        opacity: 0;
     }
 
     .owl-nav .owl-prev, .owl-nav .owl-next{
